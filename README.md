@@ -18,5 +18,5 @@ Kami menjawab soal ini dengan membuat bash script (bash script yang dimaksud ada
 
 # Soal 5:
 Kami menjawab soal ini dengan cara membuat bash script sbg berikut :
-awk /'cron/ || /CRON/,!/sudo/' /var/log/syslog | awk 'NF < 13' > /home/faqih/modul1/syslogikul.log
+awk /'cron/ || /CRON/,!/sudo/' /var/log/syslog | awk 'NF < 13' > /home/faqih/modul1/syslogikul.log \n
 di atas cron yg digunakan tidak case sensitive, tidak menggunakan sudo dan number of fieldsnya kurang dari 13.
