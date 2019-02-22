@@ -1,0 +1,5 @@
+Crontab Nomor 1:
+14 14 14 2 * bash /home/faqih/Ikul/soal1.sh
+
+Crontab Nomor 5:
+2-30/6 * * * * bash /home/faqih/Ikul/soal5.sh
