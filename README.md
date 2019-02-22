@@ -7,7 +7,7 @@ Kami menjawab soal ini dengan cara pertama-tama membuat bash script yang akan me
 cron itu bermaksud akan bash suatu file dengan alamat pada PC "/home/faqih/Ikul/soal1.sh" pada pukul 14:14 tanggal 14 Februari
 
 # Soal 2:
-
+Kami menjawab soal ini dengan cara pertama-tama saya coba membuka filenya dengan cat. Ternyata setiap kolom dibagi dengan ",". Kami membuat script yang membagi kolom dengan ",". Setelah itu mencari dengan awk max negara pada tahun 2012. Mencari Top 3 dari Product Line dari soal A, dan Mencari Top dari Soal B. Dengan cara mengecek angka satu per satu jika lebih besar maka dimasukkan, jika lebih kecil tidak terpakai.
 
 # Soal 3:
 Kami menjawab soal ini dengan membuat bash script (bash script yang dimaksud adalah soal3.sh). Script ini akan mengambil suatu output awal dari /dev/urandom (dimana /dev/urandom memiliki output yang sangat random) lalu di hilangkan semua yang bukan alfanumeric dengan tr -dc [:alnum:] lalu diambil 12 karakter dengan head -c 12
@@ -17,3 +17,6 @@ Kami menjawab soal ini dengan membuat bash script (bash script yang dimaksud ada
 0 * * * * bash ~/soal4.sh
 
 # Soal 5:
+Kami menjawab soal ini dengan cara membuat bash script sbg berikut :
+awk /'cron/ || /CRON/,!/sudo/' /var/log/syslog | awk 'NF < 13' > /home/faqih/modul1/syslogikul.log
+di atas cron yg digunakan tidak case sensitive, tidak menggunakan sudo dan number of fieldsnya kurang dari 13.
